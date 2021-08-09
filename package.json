@@ -1,0 +1,43 @@
+{
+  "name": "@headhr/conform",
+  "version": "0.1.0",
+  "description": "Input conform logic",
+  "keyword": [
+    "input validation logic"
+  ],
+  "main": "dist/index.js",
+  "types": "dist/index.d.js",
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/clrmo/js-conform.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' mocha -r ts-node/register 'tests/**/*.ts'",
+    "prepare": "npm run build"
+  },
+  "author": "HHR",
+  "license": "GPL-3.0",
+  "devDependencies": {
+    "@types/chai": "^4.2.21",
+    "@types/lodash": "^4.14.172",
+    "@types/mocha": "^9.0.0",
+    "chai": "^4.3.4",
+    "mocha": "^9.0.3",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5"
+  },
+  "bugs": {
+    "url": "https://github.com/clrmo/js-conform/issues"
+  },
+  "homepage": "https://github.com/clrmo/js-conform#readme",
+  "keywords": [
+    "input validation"
+  ],
+  "dependencies": {
+    "@headhr/lodash": "^0.1.0"
+  }
+}
